@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b07-hg-room-pr-1/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://hwagok-room-zone.namanavi.com/</loc>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b07-hg-room-pr-1/posts/checklist-001-jeqiub.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://hwagok-room-zone.namanavi.com/about.html</loc>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b07-hg-room-pr-1/posts/checklist-002-g42un0.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://hwagok-room-zone.namanavi.com/blog.html</loc>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b07-hg-room-pr-1/posts/compare-001-g42un0.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b07-hg-room-pr-1/feed.xml</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
