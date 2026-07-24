@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity 4ce30290b8b20808</metadata>
-  <rect width="64" height="64" rx="16" fill="hsl(243 52% 40%)"/>
-  <path d="M38 0h26v64H24Z" fill="hsl(293 78% 62%)" opacity="0.82"/>
-  <g transform="rotate(235 32 32)" opacity="0.42"><path d="M14 20h36L32 50Z" fill="none" stroke="#101418" stroke-width="7" stroke-linejoin="round"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#101418" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">HR</text>
+  <title>화곡 룸싸롱 가격</title>
+  <rect width="64" height="64" rx="10" fill="hsl(243 50% 24%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(300 68% 66%)" opacity="0.16"/>
+  <g transform="rotate(270 32 32)"><circle cx="16" cy="16" r="5" fill="hsl(243 24% 96%)"/><circle cx="32" cy="16" r="5" fill="hsl(243 24% 96%)"/><circle cx="48" cy="16" r="5" fill="hsl(243 24% 96%)"/><circle cx="16" cy="32" r="5" fill="hsl(243 24% 96%)"/><circle cx="32" cy="32" r="6" fill="hsl(300 68% 66%)"/><circle cx="48" cy="32" r="5" fill="hsl(243 24% 96%)"/><circle cx="16" cy="48" r="5" fill="hsl(243 24% 96%)"/><circle cx="32" cy="48" r="5" fill="hsl(243 24% 96%)"/><circle cx="48" cy="48" r="5" fill="hsl(243 24% 96%)"/></g>
 </svg>
