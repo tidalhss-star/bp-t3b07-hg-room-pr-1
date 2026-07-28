@@ -1,380 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>화곡 룸싸롱 가격 찐블로그 | 화곡역 룸 가격비교</title>
-    <meta name="description" content="화곡 룸싸롱 가격 진짜 실전 꿀팁 대방출. 화곡역 3분, 24시 초이스 가능한 곳 가격까지 찐리얼하게 알려줌. 예약은 010-6279-0862">
-    <meta name="keywords" content="화곡 룸싸롱, 화곡 룸싸롱 가격, 화곡역 룸싸롱, 화곡 룸, 화곡 가라오케, 화곡 술집, 강서구 룸싸롱, 화곡동 룸싸롱, 화곡 블로그">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hwagok-room-zone.namanavi.com/blog.html">
-    <meta property="og:title" content="화곡 룸싸롱 가격 찐블로그 | 가성비 끝판왕">
-    <meta property="og:description" content="내 돈 내산 찐후기. 화곡 룸싸롱 가격부터 서비스, 팁까지 다 까발림.">
-    <meta property="og:image" content="https://t3b07-hg-room-pr-1.vercel.app/og-blog.jpg">
-    <meta property="og:url" content="https://hwagok-room-zone.namanavi.com/blog.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        /* RESET & BASE */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        body {
-            background: #0b0b0e;
-            color: #e0e0e0;
-            font-family: 'Inter', 'Noto Sans KR', sans-serif;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        img, svg {
-            max-width: 100%;
-            display: block;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-        a:hover {
-            opacity: 0.7;
-        }
-        /* TYPOGRAPHY - oversized brutal */
-        h1 {
-            font-size: clamp(2.8rem, 12vw, 6rem);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-            line-height: 0.95;
-            color: #f5f5f5;
-            text-shadow: 4px 4px 0 #ff0055, 8px 8px 0 rgba(0, 255, 255, 0.3);
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            font-size: clamp(2rem, 6vw, 3.6rem);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            border-left: 10px solid #ff0055;
-            padding-left: 1.2rem;
-            margin: 3rem 0 1.5rem 0;
-            color: #f0f0f0;
-        }
-        h3 {
-            font-size: clamp(1.4rem, 4vw, 2.2rem);
-            font-weight: 600;
-            margin-top: 2.2rem;
-            margin-bottom: 0.8rem;
-            color: #ffd966;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.1rem;
-            color: #cdcdcd;
-        }
-        .font-mono {
-            font-family: 'JetBrains Mono', 'Courier New', monospace;
-            letter-spacing: -0.02em;
-        }
-        /* LAYOUT BRUTAL */
-        .container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            background: #141418;
-            padding: 2rem 1.5rem;
-            border-top: 3px solid #ff0055;
-            border-bottom: 3px solid #00ffff;
-        }
-        /* HEADER */
-        header {
-            background: #0b0b0e;
-            padding: 1.2rem 0;
-            border-bottom: 3px solid #ff0055;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            background: #ff0055;
-            color: #0b0b0e;
-            padding: 0.2rem 0.8rem;
-            display: inline-block;
-            transform: rotate(-1deg);
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            font-weight: 600;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            padding: 0.4rem 0;
-            border-bottom: 2px solid transparent;
-            transition: 0.2s;
-        }
-        nav a:hover {
-            border-bottom-color: #ff0055;
-        }
-        .hamburger-menu {
-            display: none;
-            font-size: 2rem;
-            background: none;
-            border: 2px solid #ff0055;
-            color: #ff0055;
-            padding: 0.2rem 0.8rem;
-            cursor: pointer;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #ff0055;
-            color: #0b0b0e;
-            font-weight: 700;
-            padding: 0.4rem 1.2rem;
-            font-size: 1.2rem;
-            border: 2px solid #ff0055;
-            transition: 0.2s;
-        }
-        .tel-link:hover {
-            background: #0b0b0e;
-            color: #ff0055;
-            border-color: #ff0055;
-        }
-        /* BLOG CARD / POST */
-        .blog-post {
-            background: #16161c;
-            padding: 2.5rem 2rem;
-            border-left: 8px solid #ff0055;
-            border-radius: 0;
-            margin: 3rem 0;
-            box-shadow: 10px 10px 0 #00ffff33;
-            position: relative;
-        }
-        .blog-post .date {
-            font-family: 'JetBrains Mono', monospace;
-            color: #ff0055;
-            font-weight: 600;
-            font-size: 1rem;
-            background: #0b0b0e;
-            display: inline-block;
-            padding: 0.2rem 1rem;
-            border: 1px solid #ff0055;
-            margin-bottom: 1.5rem;
-        }
-        .blog-post .highlight {
-            background: #ff005522;
-            padding: 0.2rem 0.4rem;
-            font-weight: 600;
-            color: #ffb3c6;
-        }
-        .blog-post ul {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style: square;
-            color: #b0b0b0;
-        }
-        .blog-post li {
-            margin-bottom: 0.5rem;
-            font-size: 1.05rem;
-        }
-        .blog-post .price-box {
-            background: #0f0f13;
-            border: 2px dashed #ffd966;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            font-weight: 600;
-            color: #ffd966;
-            font-size: 1.3rem;
-            text-align: center;
-        }
-        .blog-post .price-box span {
-            color: white;
-            background: #ff0055;
-            padding: 0.2rem 0.8rem;
-        }
-        .blog-post .signature {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #ff0055;
-            margin-top: 2rem;
-            border-top: 2px solid #ff0055;
-            padding-top: 1rem;
-            display: inline-block;
-        }
-        /* FOOTER */
-        footer {
-            background: #0b0b0e;
-            border-top: 3px solid #ff0055;
-            padding: 2rem 0;
-            margin-top: 4rem;
-            text-align: center;
-            color: #888;
-            font-size: 0.9rem;
-        }
-        /* responsive-768 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 1rem;
-            }
-            h1 {
-                font-size: 2.4rem;
-                text-shadow: 3px 3px 0 #ff0055, 5px 5px 0 rgba(0,255,255,0.2);
-            }
-            h2 {
-                font-size: 1.8rem;
-                padding-left: 0.8rem;
-                border-left-width: 6px;
-            }
-            nav {
-                gap: 1rem;
-                flex-basis: 100%;
-                justify-content: center;
-                margin-top: 0.8rem;
-            }
-            .hamburger-menu {
-                display: block;
-            }
-            .nav-present .hamburger-menu {
-                display: block;
-            }
-            .tel-link {
-                font-size: 1rem;
-                padding: 0.3rem 0.8rem;
-            }
-            .blog-post {
-                padding: 1.8rem 1.2rem;
-            }
-            .blog-post .price-box {
-                font-size: 1rem;
-                padding: 1rem;
-            }
-        }
-        @media (max-width: 480px) {
-            header .container {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            nav {
-                flex-direction: column;
-                gap: 0.5rem;
-                align-items: center;
-            }
-            .logo {
-                font-size: 1.5rem;
-                align-self: flex-start;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>화곡 룸싸롱 가격 블로그</title>
+  <meta name="description" content="화곡 룸싸롱 가격을 기준으로 언제, 어디서, 어떻게 선택하면 좋은지 시점별 조건을 정리했습니다. 초보자도 빠르게 판단할 수 있는 체크리스트와 FAQ를 제공합니다.">
+  <meta name="keywords" content="화곡 룸싸롱, 룸싸롱 가격, 화곡 나이트클럽, 화곡 유흥, 화곡 룸가격">
+  <link rel="canonical" href="https://hwagok-room-zone.namanavi.com/blog.html">
+  <meta property="og:title" content="화곡 룸싸롱 가격 — 시점별 선택 가이드">
+  <meta property="og:description" content="화곡 룸싸롱 가격을 기준으로 언제, 어디서, 어떻게 선택하면 좋은지 시점별 조건을 정리했습니다. 초보자도 빠르게 판단할 수 있는 체크리스트와 FAQ를 제공합니다.">
+  <meta property="og:url" content="https://hwagok-room-zone.namanavi.com/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://hwagok-room-zone.namanavi.com/assets/og-image.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="logo"><a href="/">화곡 유흥 가이드</a></div>
+    <button class="n-img-0h5q-toggle" aria-label="메뉴 토글"></button>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/category/room-salons">룸싸롱</a></li>
+        <li><a href="/category/nightclubs">나이트클럽</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-    <div class="container">
-        <a href="/" class="logo">화곡룸찐</a>
-        <!-- hamburger-menu (visual only, 실제 동작은 ui 라이브러리 가정) -->
-        <button class="hamburger-menu" aria-label="메뉴 열기">☰</button>
-        <nav class="nav-present">
-            <a href="/">홈</a>
-            <a href="/price">가격</a>
-            <a href="/blog">블로그</a>
-            <a href="/review">후기</a>
-            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
-        </nav>
-    </div>
-</header>
+  <main class="main">
+    <!-- 소개 섹션 -->
+    <section class="section intro">
+      <h1>화곡 룸싸롱 가격, 언제가 가장 합리적일까?</h1>
+      <p>화곡 지역에는 다양한 가격대의 룸싸롱이 존재합니다. 가격은 단순히 비용만을 의미하지 않으며, 그때그때의 분위기, 인원 구성, 방문 목적에 따라 최적의 선택이 달라집니다. 이번 포스팅에서는 가격을 중심으로 시점별, 인원별, 목적별 체크포인트를 정리해 보았습니다.</p>
+      <p>친구와 함께 가볍게 즐기고 싶을 때, 특별한 날을 기념하고 싶을 때, 혹은 혼자 조용히 시간을 보내고 싶을 때 각각 어떤 옵션을 고려해야 하는지 실제 현장에서 겪은 상황들을 바탕으로 안내합니다.</p>
+    </section>
 
-<main class="container">
-    <h1>화곡 룸싸롱 가격<br>찐블로그</h1>
-    <p style="font-size:1.3rem; color:#aaa; margin-bottom:2rem;">
-    <span class="font-mono">#화곡룸싸롱 #가격비교 #내돈내산</span> — 형들이랑 찐하게 써본 후기
-    </p>
-
-    <article class="blog-post">
-        <div class="date">📆 2025.03.21 · 화곡동 직화</div>
-        <h2>“화곡 룸싸롱 가격, 왜 다들 말이 달라?”</h2>
-        <p>
-            나도 처음에 검색 엄청 했어. ‘화곡 룸싸롱 가격’ 치면 블로그마다 금액이 제각각이더라고.
-            근데 알고 보니까 <span class="highlight">초이스 포함이냐, 시간대별이냐, 테이블 가격이냐</span>에 따라 완전 달라지더라.
-            그래서 내가 직접 두 군데 가보고 찐으로 비교해왔어. 형들 한 번만 읽어보셈.
-        </p>
-
-        <h3>🔥 내가 간 곳 1: 화곡역 3번출구 쪽 “더VIP룸”</h3>
-        <p>
-            일단 위치는 화곡역에서 3분 거리. 건물 외관은 좀 올드한데 내부는 깔끔했음.
-            기본 테이블 2시간 기준 <span class="highlight">30만원 (주류 별도)</span>. 근데 초이스 옵션이 10만원 추가.
-            형, 근데 초이스 퀄리티는 괜찮았어. 20대 후반~30초반 매니저 분위기.
-            아쉬운 점은 24시 영업인데 새벽 1시쯤부터는 서비스가 좀 식었음. 그래도 가성비 나쁘지 않음.
-        </p>
-
-        <div class="price-box">
-            💸 더VIP룸 : 테이블 30만원 + 초이스 10만원 = <span>40만원대</span> (2시간, 인당 1~2잔 포함)
+    <!-- 가격 가이드 섹션 -->
+    <section class="section price-guide">
+      <h2>가격대 별 특징과 선택 포인트</h2>
+      <div class="n-box-sk6k">
+        <div class="card r-card-8o58">
+          <h3>저가형 (10,000원 ~ 20,000원)</h3>
+          <p>가성비를 중시하는 고객에게 적합합니다. 기본적인 음료와 간단한 안주가 포함되며, 인원 제한이 있을 수 있습니다.</p>
+          <p>주로 평일 저녁이나 이른 밤 시간대에 비가득하므로, 조용히 대화를 나누고 싶다면 이 가격대가 좋은 선택이 됩니다.</p>
         </div>
-
-        <h3>🔥 내가 간 곳 2: 화곡동 먹자골목 안 “루나살롱”</h3>
-        <p>
-            여기는 지인 추천으로 갔어. 겉에서 보면 간판도 작고 아담한데, 내부는 완전 인스타 감성.
-            가격이 좀 쎄다고 들었는데 직접 물어보니 기본 2시간 <span class="highlight">35만원</span>.
-            근데 초이스가 기본에 1회 포함이야. 대신 2차 초이스는 추가 8만원.
-            주류는 양주 세트 5만원부터. 전체적으로 분위기가 좀 더 프라이빗하고, 직원들 응대가 좋았어.
-            새벽 3시까지 영업해서 늦은 시간까지 가능. <strong>화곡 룸싸롱 가격</strong> 대비 만족도는 높은 편.
-        </p>
-
-        <div class="price-box">
-            💸 루나살롱 : 테이블 35만원 (초이스 1회 포함) + 양주세트 5만원 = <span>40~45만원대</span>
+        <div class="card r-card-8o58">
+          <h3>중가형 (20,000원 ~ 40,000원)</h3>
+          <p>프라이빗 룸이 제공되며, 음료 선택 폭이 넓어집니다. 소규모 파티나 기념일에 적당합니다.</p>
+          <p>주말 저녁에 방문하면 분위기가 살아나며, 직원 서비스 수준도 평균 이상을 기대할 수 있습니다.</p>
         </div>
-
-        <h3>🧠 결론: 가격만 보지 말고 옵션을 봐라</h3>
-        <p>
-            단순히 ‘화곡 룸싸롱 가격’만 검색하면 20만원부터 50만원까지 나오는데, 
-            중요한 건 <span class="highlight">초이스 횟수, 시간 제한, 주류 포함 여부</span>야.
-            내 경험으로는 첫 방문이면 <strong>더VIP룸</strong> 가서 가볍게 즐기고, 
-            분위기 좋은 데서 시간 보내고 싶으면 <strong>루나살롱</strong> 추천.
-            둘 다 010-6279-0862로 예약 가능하니까 미리 물어보고 가는 게 실수 안 하는 길.
-        </p>
-
-        <ul>
-            <li>✔️ 화곡역 도보 3분, 24시 영업 확인</li>
-            <li>✔️ 초이스 옵션 꼭 물어보셈 (포함/별도)</li>
-            <li>✔️ 테이블 가격 비교하고 예약할 것</li>
-            <li>✔️ 전화 010-6279-0862 찐상담 가능</li>
-        </ul>
-
-        <p>
-            나도 처음엔 비싼 줄 알았는데, 알고 보니 <strong>화곡 룸싸롱 가격</strong>은 
-            강서구 내에서 준수한 편이야. 홍대나 강남 대비 70% 수준이면서 서비스는 비슷함.
-            형, 고민하지 말고 일단 전화 한 통 해봐. 친절하게 알려줌.
-        </p>
-
-        <div class="signature">
-            ✍️ 찐블로거 형진 &nbsp;|&nbsp; 문의 010-6279-0862
+        <div class="card r-card-8o58">
+          <h3>고가형 (40,000원 이상)</h3>
+          <p>고급 인테리어와 전용 콜렉션이 준비된 공간으로, 대규모 모임이나 특별 행사에 적합합니다.</p>
+          <p>프리미엄 음료와 맞춤형 서비스가 포함돼 있어, 잊지 못할 추억을 만들고 싶을 때 선택하면 좋습니다.</p>
         </div>
-    </article>
+      </div>
+    </section>
 
-    <!-- 추가 FAQ 스타일 (디자인 시스템 유지) -->
-    <div class="full-bleed" style="margin-top: 2rem;">
-        <div class="container">
-            <h2 style="margin-top:0; border-left-color: #00ffff;">💬 자주 묻는 질문 (FAQ)</h2>
-            <div style="display: grid; gap:
+    <!-- 상황별 선택 체크리스트 섹션 -->
+    <section class="section checklist">
+      <h2>시점·인원·목적에 따른 체크리스트</h2>
+      <article class="n-box-sk6k">
+        <h3>1️⃣ 인원 규모에 따른 고려사항</h3>
+        <p>소규모(2~4명)라면 저가형이나 중가형 룸을 이용해도 충분히 프라이버시를 유지할 수 있습니다. 반면 5명 이상이 모이면 중가형 이상의 큰 룸을 예약하는 것이 편안합니다.</p>
+        <p>인원에 따라 최소 소비액과 추가 서비스(음료, 안주) 제공 여부가 달라지니, 사전에 인원당 평균 소비를 계산해 보는 것이 현명합니다.</p>
+      </article>
+      <article class="n-box-sk6k">
+        <h3>2️⃣ 방문 시점별 팁</h3>
+        <p>평일 저녁은 가격이 낮아 저가형 옵션도 많이 남아 있습니다. 이때는 사전 예약 없이 바로 입장해도 되지만, 인기 시간대라면 대기시간이 발생할 수 있습니다.</p>
+        <p>주말 밤에는 중가형·고가형 룸이 빠르게 마감됩니다. 특별한 날이라면 최소 2~3일 전 예약을 권장합니다.</p>
+      </article>
+      <article class="n-box-sk6k">
+        <h3>3️⃣ 목적에 맞는 선택</h3>
+        <p>친목 도모가 주 목적이라면 음료와 간단한 안주가 포함된 중가형이 적당합니다. 반면, 로맨틱한 분위기와 프라이버시를 원한다면 고가형 전용 룸을 고려하세요.</p>
+        <p>업무 회식이나 네트워킹 이벤트라면, 추가 서비스(와인, 고급 주류)와 프레젠테이션 시설이 있는 곳을 찾아보는 것이 좋습니다.</p>
+      </article>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="section faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div class="n-box-sk6k">
+        <h4>Q1. 예약 없이 바로 입장할 수 있나요?</h4>
+        <p>A. 평일 오후나 저녁 초반은 대기 없이 입장 가능하지만, 인기 있는 시간대(주말 20시 이후)는 사전 예약을 권장합니다.</p>
+        <h4>Q2. 최소 인원 제한이 있나요?</h4>
+        <p>A. 저가형은 2인부터 가능하고, 중가형·고가형은 최소 4인부터 이용이 보통입니다. 정확한 인원 제한은 각 업소마다 다르니 사전 확인이 필요합니다.</p>
+        <h4>Q3. 음료는 무제한인가요?</h4>
+        <p>A. 가격대에 따라 포함되는 음료 수량이 다릅니다. 저가형은 1~2잔, 중가형은 3~4잔, 고가형은 무제한에 가까운 패키지가 제공될 수 있습니다.</p>
+        <h4>Q4. 결제는 현금만 가능한가요?</h4>
+        <p>A. 대부분 현금 및 카드 결제가 가능하지만, 일부 고가형 업소는 사전 카드 결제 전용 시스템을 운영합니다. 결제 수단은 방문 전 확인하는 것이 안전합니다.</p>
+      </div>
+    </section>
+
+    <!-- 마무리 섹션 -->
+    <section class="section conclusion">
+      <h2>마무리 및 다음 단계</h2>
+      <p>화곡 룸싸롱을 선택할 때는 가격뿐 아니라 방문 시점, 인원 규모, 그리고 구체적인 목적을 함께 고려해야 합니다. 위 체크리스트와 FAQ를 참고하여 미리 계획한다면, 기대하는 분위기와 서비스를 정확히 얻을 수 있을 것입니다.</p>
+      <p>다음 번 방문 전에는 원하는 가격대와 이용 목적을 명확히 정리하고, 필요 시 전화나 온라인 예약을 통해 예약 현황을 확인하세요. 즐거운 시간이 되시길 바랍니다!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 화곡 유흥 정보 제공. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
